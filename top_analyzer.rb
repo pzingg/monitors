@@ -114,7 +114,6 @@ class TopAnalyzer
                 when /^\s+PID\s+USER\s+PR\s+NI\s+VIRT\s+RES\s+SHR\s+S\s+\%CPU\s+\%MEM\s+TIME\+\s+COMMAND/
                     # puts "#{lno}: table header"
                     proc_table = true
-                    proc_inst = 0
                 else
                     if proc_table
                         # row looks like this
